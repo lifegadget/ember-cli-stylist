@@ -19,6 +19,14 @@ To use this just install and then in your component mixin the `shared-stylist` m
 
 You can optionally include a property in your component `_styleWhitelist` which will limit the styles that are proxied only to those you specify. 
 
+With the Mixin added your component will now proxy style properties in a safe manner (aka, they will be escaped so XSS attacks are made much harder). For your component called `my-component` a container might use it like so:
+
+    {{my-component width='50%' height='100px' fontWeight=800}}
+
+which would result in the style property being set to:
+
+    <div id="ember456" style="width: 50%; height: 100px; font-weight: 800">
+
 ## Dependencies
 
 None.

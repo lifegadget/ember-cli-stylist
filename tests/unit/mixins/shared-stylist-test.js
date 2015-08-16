@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import SharedStylistMixin from '../../../mixins/shared-stylist';
+import SharedStylistMixin from 'ember-cli-stylist/mixins/shared-stylist';
 import { module, test } from 'qunit';
 
 module('Unit | Mixin | shared stylist');

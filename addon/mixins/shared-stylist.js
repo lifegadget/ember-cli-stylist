@@ -1,79 +1,79 @@
 import Ember from 'ember';
-const { keys } = Object;
-const {observer, A, run, typeOf, on} = Ember;
-const _styleProperties = ['maxWidth', 'width', 'minWidth','height','fontSize','fontFamily','fontWeight','fontStyle','cursor'];
-const GOLDEN_RATIO = 1.618;
-const ASPECT_RATIO = 1.3;
-const sizer = size => {
-  return Number(size) === size ? size + 'px' : size;
-};
-/**
- * Ensures that the value has been escaped before allowing through to the DOM
- * @param  {mixed}  input API or addon provided value
- * @return {string}       HTML escaped string
- */
-const securitize = function(input){
-  if(typeOf(input) === 'object') {
-    input = input.toString();
-  }
-  return Ember.Handlebars.Utils.escapeExpression(input);
-};
 
-var SharedStylist = Ember.Mixin.create({
-  _styleWhitelist: _styleProperties,
-  _unbindStyle: on('didInitAttrs',function() {
-    new A(this.get('attributeBindings')).removeObject('style');
+export default Ember.Mixin.create({
+
+  /* component should expose a style property which should be an object e.g.
+  style: Ember.computed('myWidth', function() {
+    return {
+      width: this.get('myWidth'),
+      minHeight: 100,
+      color: htmlSafe("red")
+    }
+  })
+  If SafeString is not used then the values will be escaped.
+  */
+  _lastKeys: [],
+
+  _styleInit: Ember.on('willInsertElement', function() {
+    this._setStyle(); 
   }),
-  _style: on('init',observer(..._styleProperties, function() {
-    this._setStyle();
-  })),
-  _setStyle() {
-    const styleProperties = this.getProperties(..._styleProperties);
-    /**
-     * Provides a per-type styler that allows for some sensible defaults
-     * @param  {string} style The style property being evaluated
-     * @param  {string} value The suggested value for this style property
-     * @return {string}       A mildly processed/improved variant on the input
-     */
-    const stylist = (style, value) => {
-      switch(style) {
-        case 'fontSize':
-        case 'width':
-        case 'minWidth':
-        case 'maxWidth':
-          return sizer(value);
-        case 'height':
-          let width = this.get('width');
-          if(!width || String(width).substr(-2) !== 'px') {
-            return sizer(value);
-          }
-          width = width.substr(0,width.length - 2);
-          if(value === 'golden') {
-             return width / GOLDEN_RATIO + 'px';
-          } else if (value === 'square' && this.get('width')) {
-            return width / ASPECT_RATIO + 'px';
-          } else {
-            return sizer(value);
-          }
-          return value;
-        default:
-          if(new A(['undefined','null']).contains(typeOf(value))) {
-            return null;
-          }
-          return value;
-      }
-    };
-    run.schedule('afterRender', this, function(){
-      let style = this.get('element').style;
-      let whitelist = new A(this.get('_styleWhitelist'));
-      keys(styleProperties).map(item => {
-        if(whitelist.contains(item)) {
-          style[item] = securitize(stylist(item,styleProperties[item]));
-        }
-      });
-    });
-  },
-});
 
-SharedStylist[Ember.NAME_KEY] = 'Shared Stylist';
-export default SharedStylist;
+  _styleObserver: Ember.observer('style', function() {
+    this._setStyle(); 
+  }),
+
+  _setStyle: function() {
+    var style = this.get('style');
+
+    var domStyle = this.get('element').style;
+
+    var newKeys = [];
+    var removedKeys = this._lastKeys;
+
+    for (var key in style) {
+      if (style.hasOwnProperty(key)) {
+        var value = style[key];
+
+        // clean up the key and value
+        key = Ember.String.dasherize(key);
+        value = this._escape(value);
+
+        // set the dom style
+        domStyle.setProperty(key, value);
+
+        // deal with keys that have been removed since last time
+        newKeys.push(key);
+        var index = removedKeys.indexOf(key);
+        if (index >= 0)
+        {
+          removedKeys.splice( index, 1 );
+        }
+      }
+    }
+    // remove old styles that we don't need any more
+    for (var removedIndex in removedKeys) {
+      domStyle.removeProperty(removedKeys[removedIndex]);
+    }
+    this._lastKeys = newKeys;
+  },
+
+  _escape: function(data) {
+    if (data instanceof Ember.Handlebars.SafeString)
+    {
+      // safe string, so return unmodified
+      return data;
+    }
+    var type = typeof data;
+    if (type === "number" || 
+        type === "boolean")
+    {
+      // those are all safe
+      return data.toString();
+    }
+    if (type === "object")
+    {
+      data = data.toString();
+    }
+    return Ember.Handlebars.Utils.escapeExpression(data);
+  }
+});

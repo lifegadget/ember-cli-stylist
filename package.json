@@ -1,7 +1,7 @@
 {
   "name": "ember-cli-stylist",
   "version": "0.0.2",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Ember-cli addon to allow easy CSP-safe component CSS inline styling",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -11,11 +11,11 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/lifegadget/ember-cli-stylist",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Ken Snyder",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",

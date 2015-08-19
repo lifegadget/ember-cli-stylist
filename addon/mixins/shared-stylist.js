@@ -51,8 +51,8 @@ export default Ember.Mixin.create({
       }
     }
     // remove old styles that we don't need any more
-    for (var index in removedKeys) {
-      domStyle.removeProperty(removedKeys[index]);
+    for (var removedIndex in removedKeys) {
+      domStyle.removeProperty(removedKeys[removedIndex]);
     }
     this._lastKeys = newKeys;
   },

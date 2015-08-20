@@ -4,11 +4,11 @@
 ## Install ##
 - Modern CLI versions
     ````bash
-    ember install ui-knob
+    ember install ember-cli-stylist
     ````
 
 ## Usage ##
-This addon those seaking to have their component  proxy through HTML **style** attributes (such as `height`, `width`, `color`, `fontSize`, etc.) but do not want force a containing object to be required to open up their content-security-policy to include the **'unsafe-inline'** property.
+This addon helps addon and component developers to provide HTML style attibutes as part of their API without opening up their content-security-policy to include the **'unsafe-inline'** property.
 
 To use this just install and then in your component mixin the `shared-stylist` mixin like so:
 
@@ -17,7 +17,9 @@ To use this just install and then in your component mixin the `shared-stylist` m
       // your code here
     }
 
-You can optionally include a property in your component `_styleWhitelist` which will limit the styles that are proxied only to those you specify. 
+You can optionally include a property in your component `styleBindings` which will specify which styles you want  proxied. If you don't specify then the default properties proxied are:
+
+> height width min-height max-height min-width max-width font-size font-family font-weight cursor display
 
 With the Mixin added your component will now proxy style properties in a safe manner (aka, they will be escaped so XSS attacks are made much harder). For your component called `my-component` a container might use it like so:
 

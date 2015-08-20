@@ -5,7 +5,7 @@ const {get, set} = Ember;  // jshint ignore:line
 
 
 
-moduleForComponent('shared-stylist', 'Integration | Mixin | shared-stylist', {
+moduleForComponent('test-component', 'Integration | Mixin | shared-stylist', {
   integration: true
 });
 

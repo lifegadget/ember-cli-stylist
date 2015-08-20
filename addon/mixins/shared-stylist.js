@@ -1,7 +1,8 @@
 import Ember from 'ember';
 const { keys } = Object;
-const {observer, A, run, typeOf, on} = Ember;
-const _styleProperties = ['maxWidth', 'width', 'minWidth','height','fontSize','fontFamily','fontWeight','fontStyle','cursor'];
+const {A, run, typeOf, on} = Ember;
+const defaultBindings = ['maxWidth', 'width', 'minWidth','height','minHeight','maxHeight','fontSize','fontFamily','fontWeight','fontStyle','cursor','display'];
+const _unboundAttributes = ['style'];
 const GOLDEN_RATIO = 1.618;
 const ASPECT_RATIO = 1.3;
 const sizer = size => {
@@ -20,15 +21,40 @@ const securitize = function(input){
 };
 
 var SharedStylist = Ember.Mixin.create({
-  _styleWhitelist: _styleProperties,
-  _unbindStyle: on('didInitAttrs',function() {
-    new A(this.get('attributeBindings')).removeObject('style');
+  _init: on('init', function() {
+    // At component initialisation will add appropriate observers
+    // based on "styleBindings" and "defaultBindings"
+    const styleBindings = this.get('styleBindings');
+    const observerBindings = styleBindings ? styleBindings : defaultBindings;
+    observerBindings.map(item => {
+      this.addObserver(item, this, '_setStyle');
+    });
+    // Components are by default bound to 'style', to break this unwanted binding we
+    // must remove it from Ember's "attributeBindings" property before it is changed to
+    // a ![concatinated property](http://emberjs.com/api/classes/Ember.CoreObject.html#property_concatenatedProperties)
+    const attributeBindings = new A(this.get('attributeBindings'));
+    _unboundAttributes.map(item => {
+      if(attributeBindings.contains(item)) {
+        attributeBindings.removeObject(item);
+      }
+    });
   }),
-  _style: on('init',observer(..._styleProperties, function() {
-    this._setStyle();
-  })),
+  // Because we created the observer dynamically we must take responsibility of
+  // removing the observers on exit
+  _willDestroyElement: on('willDestroyElement', function() {
+    const styleBindings = this.get('styleBindings');
+    const observerBindings = styleBindings ? styleBindings : defaultBindings;
+
+    observerBindings.map(item => {
+      this.removeObserver(item, this, '_setStyle');
+    });
+  }),
+  /**
+   * Aggregates all the properties specified in styleBindings into a single safe style string
+   */
   _setStyle() {
-    const styleProperties = this.getProperties(..._styleProperties);
+    const componentStyleBindings = this.get('styleBindings');
+    const styleProperties = componentStyleBindings ? componentStyleBindings : defaultBindings;
     /**
      * Provides a per-type styler that allows for some sensible defaults
      * @param  {string} style The style property being evaluated
@@ -63,15 +89,26 @@ var SharedStylist = Ember.Mixin.create({
           return value;
       }
     };
-    run.schedule('afterRender', this, function(){
-      let style = this.get('element').style;
+    const execute = () => {
+      let style = this.get('element.style');
       let whitelist = new A(this.get('_styleWhitelist'));
-      keys(styleProperties).map(item => {
-        if(whitelist.contains(item)) {
-          style[item] = securitize(stylist(item,styleProperties[item]));
-        }
+      if(style) {
+        keys(styleProperties).map(item => {
+          if(whitelist.contains(item)) {
+            style[item] = securitize(stylist(item,styleProperties[item]));
+          }
+        });
+      }
+    };
+    try {
+      execute();
+    } catch (e) {
+      // prior to rendering there will be no 'style' property
+      // to work off of so we must defer
+      run.schedule('afterRender', function() {
+        execute();
       });
-    });
+    }
   },
 });
 

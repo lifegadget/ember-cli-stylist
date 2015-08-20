@@ -1,5 +1,4 @@
 import Ember from 'ember';
-const { keys } = Object;
 const {A, run, typeOf, on} = Ember;
 const defaultBindings = ['maxWidth', 'width', 'minWidth','height','minHeight','maxHeight','fontSize','fontFamily','fontWeight','fontStyle','cursor','display'];
 const _unboundAttributes = ['style'];

@@ -21,13 +21,16 @@ const securitize = function(input){
 };
 
 var SharedStylist = Ember.Mixin.create({
-  _init: on('init', function() {
+  _initialise: on('init', function() {
     // At component initialisation will add appropriate observers
     // based on "styleBindings" and "defaultBindings"
     const styleBindings = this.get('styleBindings');
     const observerBindings = styleBindings ? styleBindings : defaultBindings;
     observerBindings.map(item => {
-      this.addObserver(item, this, '_setStyle');
+      this.addObserver(item, this._setStyle);
+    });
+    run.schedule('afterRender', () => {
+      this._setStyle();
     });
     // Components are by default bound to 'style', to break this unwanted binding we
     // must remove it from Ember's "attributeBindings" property before it is changed to
@@ -91,12 +94,10 @@ var SharedStylist = Ember.Mixin.create({
     };
     const execute = () => {
       let style = this.get('element.style');
-      let whitelist = new A(this.get('_styleWhitelist'));
+      const values = this.getProperties(...styleProperties);
       if(style) {
-        keys(styleProperties).map(item => {
-          if(whitelist.contains(item)) {
-            style[item] = securitize(stylist(item,styleProperties[item]));
-          }
+        styleProperties.map(item => {
+          style[item] = securitize(stylist(item,values[item]));
         });
       }
     };

@@ -1,0 +1,1518 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sever",
+				"severityScale"
+			],
+			[
+				"activity-plugin",
+				"activity-plugin-girth-measurement-test.js"
+			],
+			[
+				"borderlef",
+				"border-left-style"
+			],
+			[
+				"cre",
+				"createComputed"
+			],
+			[
+				"sortable",
+				"sortable-list.js"
+			],
+			[
+				"_aspe",
+				"_aspectPanes"
+			],
+			[
+				"Action",
+				"actionHandler"
+			],
+			[
+				"paneA",
+				"paneAction"
+			],
+			[
+				"f",
+				"folders"
+			],
+			[
+				"class",
+				"classNameBindings"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 3248,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "addon/mixins/shared-stylist.js",
+			"settings":
+			{
+				"buffer_size": 4203,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"last_filter": "statu",
+		"selected_items":
+		[
+			[
+				"statu",
+				"Git: Status"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"push",
+				"Git: Push"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"delet",
+				"File: Delete"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"editsnip",
+				"SnippetMaker: Edit Snippet"
+			],
+			[
+				"orgmoveri",
+				"Origami: Move File to Pane on the Right"
+			],
+			[
+				"right",
+				"Origami: Create Pane on the Right"
+			],
+			[
+				"ember",
+				"Snippet: Ember Project Configuration"
+			],
+			[
+				"proje",
+				"Snippet: Ember Project Configuration"
+			],
+			[
+				"orgamove",
+				"Origami: Move File to Pane on the Right"
+			],
+			[
+				"feat",
+				"Git-flow: Feature Start"
+			],
+			[
+				"fini",
+				"Git-flow: Feature Finish"
+			],
+			[
+				"finish",
+				"Git-flow: Feature Finish"
+			],
+			[
+				"feature",
+				"Git-flow: Feature Start"
+			],
+			[
+				"finis",
+				"Git-flow: Release Finish"
+			],
+			[
+				"rele",
+				"Git-flow: Release Finish"
+			],
+			[
+				"flow",
+				"Git-flow: Feature Finish"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"swap",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"orgde",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"quote",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"hand",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"make sn",
+				"SnippetMaker: Make Snippet"
+			],
+			[
+				"snippet:",
+				"Snippet: Ember Project Configuration"
+			],
+			[
+				"snippet",
+				"SnippetManager: List"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"git push",
+				"Git: Push"
+			],
+			[
+				"git statu",
+				"Git: Status"
+			],
+			[
+				"php",
+				"PHP Code Sniffer: Sniff this file"
+			],
+			[
+				"intsal",
+				"Package Control: Install Package"
+			],
+			[
+				"jshin",
+				"JSHint: Set Plugin Options"
+			],
+			[
+				"high",
+				"BracketHighlighter: Select Bracket Content with Brackets"
+			],
+			[
+				"o",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"destory",
+				"Origami: Destroy Current Pane"
+			],
+			[
+				"focus righ",
+				"Origami: Focus on Pane on the Right"
+			],
+			[
+				"orgam",
+				"Origami: Destroy Pane Below"
+			],
+			[
+				"git status",
+				"Git: Status"
+			],
+			[
+				"align",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"source",
+				"SourceTree: Open SourceTree"
+			],
+			[
+				"marked",
+				"Marked"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git qa",
+				"Git: Quick Add"
+			],
+			[
+				"git com",
+				"Git: Quick Commit"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"packlist",
+				"Package Control: List Packages"
+			],
+			[
+				"pack ",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack list",
+				"Package Control: Remove Repository"
+			],
+			[
+				"build",
+				"Build: Cancel"
+			],
+			[
+				"git sta",
+				"Git: Status"
+			],
+			[
+				"packinstal",
+				"Package Control: Install Package"
+			],
+			[
+				"gitlic",
+				"SublimeGit: Add License"
+			],
+			[
+				"gitstat",
+				"Git: Status"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install pack",
+				"Package Control: Install Package"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"Package Control: In",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install Package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: pat",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 579.0
+	},
+	"console":
+	{
+		"height": 358.0,
+		"history":
+		[
+			"install EditorConfig",
+			"install package ",
+			"ls",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"install ",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/PEGASUS/repos/mine/ember-cli-stylist"
+	],
+	"file_history":
+	[
+		"/Volumes/PEGASUS/repos/mine/trainer/app/authorizers/application.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/application.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/authenticators/oauth2.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/bower.json",
+		"/Volumes/PEGASUS/repos/mine/trainer/config/environment.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/adapters/application.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/package.json",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/controllers/schedule/day-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/activity-plugin-fat.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/schedule/day.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/integration/components/client-milestones-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/client-milestones.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/reminders/remind.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/services/clients.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/workouts/workout.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/workouts/new.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/sessions/session.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/schedule/day.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/reschedule/appointment.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/clients/client.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/activities/activity.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/sessions.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/clients.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/client.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/settings/workouts.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/ref-marker.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/activity-plugin-sickness.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/activity-plugin-injury.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/activity-plugin-girth-measurement.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/activity-plugin-girth.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/routes/clients/new-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/workouts/new.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/activity-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/app-template-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/router.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/routes/clients/client-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/user-template-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/schedule-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/routes/sessions/session/start-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/comment-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/relationship-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/goal-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/controllers/workouts/new-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/controllers/workouts/workout-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/mirage/config.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/models/workout-template.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/schedule-for-day-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/helpers/setup-mirage-for-integration-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/clients/client/goals/index.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/controllers/goals/index-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/standard-header.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/standard-header.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/standard-header-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/session-listing-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/master-detail-item-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-injury-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/activity-plugin-injury.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/integration/components/activity-plugin-injury-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/integration/components/activity-plugin-sickness-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-girth-measurement-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/integration/components/activity-plugin-training-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/activity-plugin-training.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/activity-plugin-girth.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-girth-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/activity-plugin-sickness.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/integration/components/activity-plugin-fat-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/activity-plugin-fat.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/models/user.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/session-listing.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/session-listing.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/mirage/factories/user.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/integration/components/session-listing-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/helpers/setup-mirage-for-integration.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/mirage/factories/activity.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/controllers/workouts-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/server/index.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/services/sessions.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/routes/settings/workouts.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/workouts.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/integration/components/session-list-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/ui-button-menu.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/workouts/new.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/schedule.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/models/clients/foobar-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/routes/clients/foobar-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/views/exercises/exercise.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-detailer-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-header-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-fat-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-sickness-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-training-count-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-training-distance-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-training-time-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-plugin-training-weight-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-summary-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/activity-updater-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/async-timer-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/bootstrap-slider-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/ember-date-picker-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/ember-tod-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/ref-marker-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/sortable-list-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/ui-button-menu-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/ui-button-menu.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/ui-schedule.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/objects/ModelFragment.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/activity-plugin-training.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/client-goals-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/ui-schedule-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/activity-detailer.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/routes/activities-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/node_modules/ember-cli-release/node_modules/moment-timezone/moment-timezone.js",
+		"/Users/Ken/.oh-my-zsh/oh-my-zsh.sh",
+		"/Users/Ken/.zshrc",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/client-milestones.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/tests/unit/components/ui-datetime-test.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/components/ui-datetime.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/ui-datetime.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/transforms/dictionary.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/mixins/dictionary-manager.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/sessions/session/start.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/sessions/session/scheduled.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/sessions/session/rebooked.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/controllers/sessions/session/rebook.js",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/components/master-detail-item.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/reminders/remind.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/sessions/new.hbs",
+		"/Volumes/PEGASUS/repos/mine/trainer/app/templates/sessions/session/scheduled.hbs"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/PEGASUS/repos/mine/trainer/node_modules/ember-simple-auth",
+			"",
+			"*.hbs",
+			"",
+			"*.hbs",
+			"*.hb",
+			"*.hbs",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"keys,",
+			"_mapSessionEventsToActions",
+			"_forwardSessionEvents",
+			"ObjectPro",
+			"ObjectProperty",
+			"_forwardSessionEvents",
+			"{{x-toggle",
+			"toggle",
+			"findAll",
+			"currentState",
+			"sessions.session.start",
+			"str.",
+			"underlined",
+			"server=",
+			"server =",
+			"dob",
+			".find(",
+			".find",
+			"{{session-list",
+			"keys,",
+			"Ember.key",
+			"refeshSessions",
+			".all(",
+			"store.all(",
+			"foobar",
+			"_style",
+			"fetch",
+			"{{exercise ",
+			"Ember.View",
+			"this.append();",
+			"append(",
+			"events:",
+			"ArrayController",
+			".keys",
+			"keys",
+			"shim",
+			"startTime",
+			".min",
+			"var",
+			"model",
+			"{{activity-plugin-fat",
+			"{{client-mile",
+			"'model.store').find",
+			"find(",
+			"store.find",
+			".find",
+			"cient",
+			"{{ui-datetime",
+			"store.all",
+			"Ember",
+			"Ember.k",
+			"Ember.keys",
+			"keys,",
+			"model",
+			"knob",
+			"{{ui-bs-button-choice",
+			"{{ui-selectize",
+			"{{ui-bs-button",
+			":expanding-",
+			"{{expanding-textarea",
+			" in ",
+			"ui-select-input",
+			"isTablet",
+			"x-knob",
+			"{{x-knob",
+			"fa-icon",
+			"bind-attr",
+			"in",
+			"scheduled",
+			"bind-attr",
+			"ObjectProxy",
+			"bind-attr",
+			"= Ember;",
+			"browser",
+			"looking ",
+			"_indentSpacing",
+			"indexText",
+			"input",
+			" + 'thingy'",
+			"properties",
+			"babel",
+			"backgroun",
+			"color",
+			"mood",
+			"colors",
+			"color",
+			"_colorClass",
+			"color",
+			"merge",
+			"removeAttr",
+			"dom-reference",
+			"attr",
+			"observer",
+			"Natural",
+			"sortOrders",
+			"store.push",
+			"store.all",
+			"didInsertElement",
+			"keys,",
+			"typeOf, keys",
+			"Ember.keys",
+			"' selected=",
+			"ui-buttons cardinality",
+			"ui-button cardinality",
+			"ui-buttons cardinality",
+			"ui-buttons button",
+			"ui-button button",
+			"ui-button buttons=",
+			"ui-button-radio choices=",
+			"ui-button-radio",
+			" ui-bs-button-choice",
+			" in ",
+			"bind-attr",
+			"UiItem",
+			"_tellList",
+			"_tellGroup",
+			"originalEvent",
+			"startDrag",
+			"register",
+			"_tellGroup",
+			"Group",
+			"registerItem",
+			"register",
+			"_tell",
+			"downer",
+			"actionManager",
+			"paneAction",
+			"actionHandler"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"this.render();",
+			"'model.store').findAll",
+			"store.findAll",
+			"{{ui-select-input",
+			":ui-expanding-",
+			"{{ui-expanding-textarea",
+			"ui-selectize",
+			"{{ui-knob",
+			"' value=",
+			"ui-buttons cardinality",
+			"ui-button cardinality='1:1' buttons=",
+			"_tellList",
+			"register",
+			"_tellGroup",
+			"route"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								853,
+								787
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "addon/mixins/shared-stylist.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4203,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1124,
+								1135
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScriptNext - ES6 Syntax/JavaScriptNext.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git-commit":
+	{
+		"height": 114.0
+	},
+	"output.git-push":
+	{
+		"height": 114.0
+	},
+	"pinned_build_system": "",
+	"project": "ember-cli-stylist.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"styljs",
+				"addon/mixins/shared-stylist.js"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"sessionlisting",
+				"app/components/session-listing.js"
+			],
+			[
+				"envr",
+				"config/environment.js"
+			],
+			[
+				"clientmiletest",
+				"tests/integration/components/client-milestones-test.js"
+			],
+			[
+				"clientmilest",
+				"app/components/client-milestones.js"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"schedulday",
+				"app/controllers/schedule/day.js"
+			],
+			[
+				"schedday",
+				"tests/unit/controllers/schedule/day-test.js"
+			],
+			[
+				"router",
+				"app/router.js"
+			],
+			[
+				"modeluser",
+				"tests/unit/models/user-template-test.js"
+			],
+			[
+				"schedultest",
+				"tests/unit/models/schedule-test.js"
+			],
+			[
+				"relaiontest",
+				"tests/unit/models/relationship-test.js"
+			],
+			[
+				"testmodelgoal",
+				"tests/unit/models/goal-test.js"
+			],
+			[
+				"testmodelcom",
+				"tests/unit/models/comment-test.js"
+			],
+			[
+				"testmodelapp",
+				"tests/unit/models/app-template-test.js"
+			],
+			[
+				"testmodel",
+				"tests/unit/models/activity-test.js"
+			],
+			[
+				"workousnewtest",
+				"tests/unit/controllers/workouts/new-test.js"
+			],
+			[
+				"modelworkou",
+				"app/models/workout-template.js"
+			],
+			[
+				"conrolworkouswor",
+				"tests/unit/controllers/workouts/workout-test.js"
+			],
+			[
+				"modeactiv",
+				"tests/unit/models/activity-test.js"
+			],
+			[
+				"controlworkounew",
+				"app/controllers/workouts/new.js"
+			],
+			[
+				"setinttest",
+				"tests/unit/helpers/setup-mirage-for-integration-test.js"
+			],
+			[
+				"scheduldaytest",
+				"tests/unit/components/schedule-for-day-test.js"
+			],
+			[
+				"goalsindex",
+				"app/routes/clients/client/goals/index.js"
+			],
+			[
+				"stantest",
+				"tests/unit/components/standard-header-test.js"
+			],
+			[
+				"sthea",
+				"app/components/standard-header.js"
+			],
+			[
+				"standarhe",
+				"app/templates/components/standard-header.hbs"
+			],
+			[
+				"session-listtest",
+				"tests/unit/components/session-listing-test.js"
+			],
+			[
+				"masteritemtest",
+				"tests/unit/components/master-detail-item-test.js"
+			],
+			[
+				"injuryhbs",
+				"app/templates/components/activity-plugin-injury.hbs"
+			],
+			[
+				"sickjs",
+				"app/components/activity-plugin-sickness.js"
+			],
+			[
+				"sicknestest",
+				"tests/integration/components/activity-plugin-sickness-test.js"
+			],
+			[
+				"injrhbs",
+				"app/templates/components/activity-plugin-injury.hbs"
+			],
+			[
+				"injuryjs",
+				"app/components/activity-plugin-injury.js"
+			],
+			[
+				"injurytest",
+				"tests/unit/components/activity-plugin-injury-test.js"
+			],
+			[
+				"girtmeatest",
+				"tests/unit/components/activity-plugin-girth-measurement-test.js"
+			],
+			[
+				"pltrainhbs",
+				"app/templates/components/activity-plugin-training.hbs"
+			],
+			[
+				"trainingtest",
+				"tests/integration/components/activity-plugin-training-test.js"
+			],
+			[
+				"actgirtjs",
+				"app/components/activity-plugin-girth.js"
+			],
+			[
+				"girthhbs",
+				"app/templates/components/activity-plugin-girth.hbs"
+			],
+			[
+				"girthtest",
+				"tests/unit/components/activity-plugin-girth-test.js"
+			],
+			[
+				"traininghbs",
+				"app/templates/components/activity-plugin-training.hbs"
+			],
+			[
+				"sicknetest",
+				"tests/integration/components/activity-plugin-sickness-test.js"
+			],
+			[
+				"sickneshbs",
+				"app/templates/components/activity-plugin-sickness.hbs"
+			],
+			[
+				"sick",
+				"app/components/activity-plugin-sickness.js"
+			],
+			[
+				"fat.js",
+				"app/components/activity-plugin-fat.js"
+			],
+			[
+				"acfathbs",
+				"app/templates/components/activity-plugin-fat.hbs"
+			],
+			[
+				"actfathb",
+				"app/templates/components/activity-plugin-fat.hbs"
+			],
+			[
+				"actiplfat",
+				"app/components/activity-plugin-fat.js"
+			],
+			[
+				"mirage",
+				"app/helpers/setup-mirage-for-integration.js"
+			],
+			[
+				"environ",
+				"config/environment.js"
+			],
+			[
+				"user",
+				"app/models/user.js"
+			],
+			[
+				"envor",
+				"config/environment.js"
+			],
+			[
+				"env",
+				"config/environment.js"
+			],
+			[
+				"seslist",
+				"app/components/session-listing.js"
+			],
+			[
+				"sessionlisthbs",
+				"app/templates/components/session-listing.hbs"
+			],
+			[
+				"sessionlisttest",
+				"tests/unit/components/session-listing-test.js"
+			],
+			[
+				"workoustest",
+				"tests/unit/controllers/workouts-test.js"
+			],
+			[
+				"actfat",
+				"app/templates/components/activity-plugin-fat.hbs"
+			],
+			[
+				"buttonmenhbs",
+				"app/templates/components/ui-button-menu.hbs"
+			],
+			[
+				"uibutton",
+				"app/components/ui-button-menu.js"
+			],
+			[
+				"injury",
+				"app/components/activity-plugin-injury.js"
+			],
+			[
+				"actiplugtrainjs",
+				"app/components/activity-plugin-training.js"
+			],
+			[
+				"traininhbs",
+				"app/templates/components/activity-plugin-training.hbs"
+			],
+			[
+				"sessionlist",
+				"tests/unit/components/session-listing-test.js"
+			],
+			[
+				"sicketest",
+				"tests/unit/components/activity-plugin-sickness-test.js"
+			],
+			[
+				"sicknes",
+				"app/components/activity-plugin-sickness.js"
+			],
+			[
+				"plugsicktest",
+				"tests/unit/components/activity-plugin-sickness-test.js"
+			],
+			[
+				"actiivitest",
+				"tests/unit/routes/activities-test.js"
+			],
+			[
+				"pluggirthtest",
+				"tests/unit/components/activity-plugin-girth-test.js"
+			],
+			[
+				"girth",
+				"app/components/activity-plugin-girth.js"
+			],
+			[
+				"activpluginfat",
+				"app/components/activity-plugin-fat.js"
+			],
+			[
+				"milstones",
+				"app/components/client-milestones.js"
+			],
+			[
+				"clientmilb",
+				"app/templates/components/client-milestones.hbs"
+			],
+			[
+				"uidatetime",
+				"app/templates/components/ui-datetime.hbs"
+			],
+			[
+				"uidate",
+				"app/components/ui-datetime.js"
+			],
+			[
+				"plgirttest",
+				"tests/unit/components/activity-plugin-girth-test.js"
+			],
+			[
+				"actfathbs",
+				"app/templates/components/activity-plugin-fat.hbs"
+			],
+			[
+				"actplfa",
+				"app/components/activity-plugin-fat.js"
+			],
+			[
+				"actplugfattest",
+				"tests/unit/components/activity-plugin-fat-test.js"
+			],
+			[
+				"cilentmil",
+				"app/components/client-milestones.js"
+			],
+			[
+				"clientmiltes",
+				"tests/unit/components/client-milestones-test.js"
+			],
+			[
+				"expand",
+				"tests/unit/components/expanding-textarea-test.js"
+			],
+			[
+				"aciviplin",
+				"app/templates/components/activity-plugin-injury.hbs"
+			],
+			[
+				"en",
+				"config/environment.js"
+			],
+			[
+				"dicionma",
+				"tests/unit/mixins/dictionary-manager-test.js"
+			],
+			[
+				"clientsclientgoal",
+				"tests/unit/controllers/clients/client/goal-test.js"
+			],
+			[
+				"controlgoal",
+				"tests/unit/controllers/goals-test.js"
+			],
+			[
+				"sessionlistinte",
+				"tests/unit/components/session-listing-test.js"
+			],
+			[
+				"clientmil",
+				"app/components/client-milestones.js"
+			],
+			[
+				"actpluggirtest",
+				"tests/unit/components/activity-plugin-girth-test.js"
+			],
+			[
+				"plugingitest",
+				"tests/unit/components/activity-plugin-girth-test.js"
+			],
+			[
+				"goals",
+				"tests/unit/adapters/goals-test.js"
+			],
+			[
+				"servsessions",
+				"app/services/sessions.js"
+			],
+			[
+				"routnewjs",
+				"app/routes/sessions/new.js"
+			],
+			[
+				"session.js",
+				"app/services/sessions.js"
+			],
+			[
+				"new.js",
+				"app/controllers/sessions/new.js"
+			],
+			[
+				"newjs",
+				"app/controllers/sessions/new.js"
+			],
+			[
+				"datetime",
+				"app/components/ui-datetime.js"
+			],
+			[
+				"uidatetimetest",
+				"tests/unit/components/ui-datetime-test.js"
+			],
+			[
+				"stand",
+				"tests/unit/components/standard-header-test.js"
+			],
+			[
+				"dictionmantest",
+				"tests/unit/mixins/dictionary-manager-test.js"
+			],
+			[
+				"standa",
+				"tests/unit/components/standard-header-test.js"
+			],
+			[
+				"actsumartest",
+				"tests/unit/components/activity-summary-test.js"
+			],
+			[
+				"actsumhb",
+				"app/templates/components/activity-summary.hbs"
+			],
+			[
+				"actisum",
+				"app/components/activity-summary.js"
+			],
+			[
+				"uischedtest",
+				"tests/unit/components/ui-schedule-test.js"
+			],
+			[
+				"staheatest",
+				"tests/unit/components/standard-header-test.js"
+			],
+			[
+				"activisumtest",
+				"tests/unit/components/activity-summary-test.js"
+			],
+			[
+				"sesslisttest",
+				"tests/unit/components/session-listing-test.js"
+			],
+			[
+				"scheduldate",
+				"tests/unit/components/schedule-for-day-test.js"
+			],
+			[
+				"masterdetailitemte",
+				"tests/unit/components/master-detail-item-test.js"
+			],
+			[
+				"actiheadtest",
+				"tests/unit/components/activity-header-test.js"
+			],
+			[
+				"avatest",
+				"tests/unit/components/avatar-icon-test.js"
+			],
+			[
+				"actdetiatest",
+				"tests/unit/components/activity-detailer-test.js"
+			],
+			[
+				"demohbs",
+				"addon/templates/components/demo-css.hbs"
+			],
+			[
+				"demo",
+				"addon/templates/components/demo-css.hbs"
+			],
+			[
+				"ember",
+				"ember-cli-build.js"
+			],
+			[
+				"ind",
+				"index.js"
+			],
+			[
+				"inde",
+				"index.js"
+			],
+			[
+				"integr",
+				"tests/integration/components/display-component-test.js"
+			],
+			[
+				"intgra",
+				"tests/integration/components/demo-css-test.js"
+			],
+			[
+				"democss",
+				"addon/components/demo-css.js"
+			],
+			[
+				"apphbs",
+				"tests/dummy/app/templates/application.hbs"
+			],
+			[
+				"index",
+				"index.js"
+			],
+			[
+				"displayhbs",
+				"addon/templates/components/display-component.hbs"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "demo",
+		"selected_items":
+		[
+			[
+				"demo",
+				"/Volumes/PEGASUS/repos/mine/demo-helper/demo-helper.sublime-project"
+			],
+			[
+				"",
+				"/Volumes/PEGASUS/repos/mine/trainer/trainer.sublime-project"
+			],
+			[
+				"train",
+				"/Volumes/PEGASUS/repos/mine/trainer/trainer.sublime-project"
+			],
+			[
+				"tra",
+				"/Volumes/PEGASUS/repos/mine/trainer/trainer.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 27.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 955.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 258.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

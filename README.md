@@ -1,5 +1,8 @@
-# [ember-cli-stylist](https://github.com/lifegadget/ember-cli-stylist) ![ ](https://travis-ci.org/lifegadget/ember-cli-stylist.svg) [![npm version](https://badge.fury.io/js/ember-cli-stylist.svg)](http://badge.fury.io/js/ember-cli-stylist) [![Code Climate](https://codeclimate.com/github/lifegadget/ember-cli-stylist/badges/gpa.svg)
+
+# [ember-cli-stylist](https://github.com/lifegadget/ember-cli-stylist)
 > Input controls for ambitious Ember applications.
+
+![ ](https://travis-ci.org/lifegadget/ember-cli-stylist.svg) [![npm version](https://badge.fury.io/js/ember-cli-stylist.svg)](http://badge.fury.io/js/ember-cli-stylist) ![Code Climate](https://codeclimate.com/github/lifegadget/ember-cli-stylist/badges/gpa.svg)
 
 ## Install ##
 - Modern CLI versions
@@ -12,10 +15,12 @@ This addon helps addon and component developers to provide HTML style attibutes 
 
 To use this just install and then in your component mixin the `shared-stylist` mixin like so:
 
-    import SharedStylist as 'ember-cli-stylist/mixins/shared-stylist';
-    export default Ember.Component.extend(SharedStylist,{
-      // your code here
-    }
+````javascript
+import SharedStylist from 'ember-cli-stylist/mixins/shared-stylist';
+export default Ember.Component.extend(SharedStylist,{
+  // your code here
+}
+````
 
 You can optionally include a property in your component `styleBindings` which will specify which styles you want  proxied. If you don't specify then the default properties proxied are:
 

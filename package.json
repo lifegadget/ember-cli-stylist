@@ -11,7 +11,7 @@
     "start": "ember server",
     "test": "ember try:testall"
   },
-  "repository": "https://github/lifegadget/ember-cli-stylist",
+  "repository": "https://github.com/lifegadget/ember-cli-stylist",
   "engines": {
     "node": ">= 0.10.0"
   },

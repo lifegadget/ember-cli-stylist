@@ -1,23 +1,12 @@
 import Ember from 'ember';
 const {A, run, typeOf, on} = Ember;
 const defaultBindings = ['maxWidth', 'width', 'minWidth','height','minHeight','maxHeight','fontSize','fontFamily','fontWeight','fontStyle','cursor','display'];
-const _unboundAttributes = ['style'];
-const GOLDEN_RATIO = 1.618;
-const ASPECT_RATIO = 1.3;
 const sizer = size => {
   return Number(size) === size ? size + 'px' : size;
 };
-/**
- * Ensures that the value has been escaped before allowing through to the DOM
- * @param  {mixed}  input API or addon provided value
- * @return {string}       HTML escaped string
- */
-const securitize = function(input){
-  if(typeOf(input) === 'object') {
-    input = input.toString();
-  }
-  return Ember.Handlebars.Utils.escapeExpression(input);
-};
+
+
+const htmlSafe = Ember.String.htmlSafe;
 
 var SharedStylist = Ember.Mixin.create({
   _initialise: on('init', function() {
@@ -31,15 +20,6 @@ var SharedStylist = Ember.Mixin.create({
     run.schedule('afterRender', () => {
       this._setStyle();
     });
-    // Components are by default bound to 'style', to break this unwanted binding we
-    // must remove it from Ember's "attributeBindings" property before it is changed to
-    // a ![concatinated property](http://emberjs.com/api/classes/Ember.CoreObject.html#property_concatenatedProperties)
-    const attributeBindings = new A(this.get('attributeBindings'));
-    _unboundAttributes.map(item => {
-      if(attributeBindings.contains(item)) {
-        attributeBindings.removeObject(item);
-      }
-    });
   }),
   // Because we created the observer dynamically we must take responsibility of
   // removing the observers on exit
@@ -51,9 +31,6 @@ var SharedStylist = Ember.Mixin.create({
       this.removeObserver(item, this, '_setStyle');
     });
   }),
-  /**
-   * Aggregates all the properties specified in styleBindings into a single safe style string
-   */
   _setStyle() {
     const componentStyleBindings = this.get('styleBindings');
     const styleProperties = componentStyleBindings ? componentStyleBindings : defaultBindings;
@@ -76,14 +53,7 @@ var SharedStylist = Ember.Mixin.create({
             return sizer(value);
           }
           width = width.substr(0,width.length - 2);
-          if(value === 'golden') {
-             return width / GOLDEN_RATIO + 'px';
-          } else if (value === 'square' && this.get('width')) {
-            return width / ASPECT_RATIO + 'px';
-          } else {
-            return sizer(value);
-          }
-          return value;
+          return sizer(value);
         default:
           if(new A(['undefined','null']).contains(typeOf(value))) {
             return null;
@@ -91,24 +61,16 @@ var SharedStylist = Ember.Mixin.create({
           return value;
       }
     };
-    const execute = () => {
-      let style = this.get('element.style');
-      const values = this.getProperties(...styleProperties);
-      if(style) {
-        styleProperties.map(item => {
-          style[item] = securitize(stylist(item,values[item]));
-        });
-      }
-    };
-    try {
-      execute();
-    } catch (e) {
-      // prior to rendering there will be no 'style' property
-      // to work off of so we must defer
-      run.schedule('afterRender', function() {
-        execute();
+    let style = [];
+    const values = this.getProperties(...styleProperties);
+    if(style) {
+      styleProperties.map(item => {
+        if(values[item]) {
+          style.push(`${item}: ${stylist(item,values[item])}`);
+        }
       });
     }
+    this.set('style', htmlSafe(style.join('; ')));
   },
 });
 

@@ -1,23 +1,22 @@
-
 # [ember-cli-stylist](https://github.com/lifegadget/ember-cli-stylist)
-> Input controls for ambitious Ember applications.
+> Ember addon for a dynamic and safe "style" property
 
 ![ ](https://travis-ci.org/lifegadget/ember-cli-stylist.svg) [![npm version](https://badge.fury.io/js/ember-cli-stylist.svg)](http://badge.fury.io/js/ember-cli-stylist) ![Code Climate](https://codeclimate.com/github/lifegadget/ember-cli-stylist/badges/gpa.svg)
 
 ## Install ##
 - Modern CLI versions
+
     ````bash
     ember install ember-cli-stylist
     ````
 
 ## Usage ##
-This addon helps addon and component developers to provide HTML style attibutes as part of their API without opening up their content-security-policy to include the **'unsafe-inline'** property.
-
-To use this just install and then in your component mixin the `shared-stylist` mixin like so:
+This addon helps component developers to provide HTML style attributes dynamically and safely. To use this just install and then in your component, mixin the `shared-stylist` mixin like so:
 
 ````javascript
 import SharedStylist from 'ember-cli-stylist/mixins/shared-stylist';
 export default Ember.Component.extend(SharedStylist,{
+  styleBindings: ['style'],
   // your code here
 }
 ````

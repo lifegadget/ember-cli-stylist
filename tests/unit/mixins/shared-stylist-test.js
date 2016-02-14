@@ -60,42 +60,49 @@ test('with fontColor a styleBinding it is set', function(assert) {
   });
 });
 
-// test('observer detects change to styleBound properties', function(assert) {
-//   assert.expect(4);
-//   Ember.run(()=> {
-//     var component = this.subject({
-//       styleBindings: ['width', 'height', 'fontColor'],
-//       width: '500px',
-//       height: '350px'
-//     });
-//     this.render();
-//     Ember.run.next(() => {
-//       assert.equal(component.get('element.style.width'), '500px', 'width set');
-//       assert.equal(component.get('element.style.height'), '350px', 'height set');
-//       component.set('width', '600px');
-//       component.set('height', '120px');
-//     });
-//     Ember.run.next(() => {
-//       assert.equal(component.get('element.style.width'), '600px', 'width now set to 600px');
-//       assert.equal(component.get('element.style.height'), '120px', 'height now set to 120px');
-//     });
-//
-//   });
-// });
-
-
 test('numeric units for "sizer" uoms is resolved to pixels', function(assert) {
   assert.expect(2);
   Ember.run(()=> {
     var component = this.subject({
       styleBindings: ['width', 'height'],
       width: 500,
-      height: 350
+      height: '350'
     });
     this.render();
     Ember.run.next(() => {
       assert.equal(component.$()[0].style.width, '500px', 'width set');
       assert.equal(component.$()[0].style.height, '350px', 'height set');
+    });
+
+  });
+});
+
+test('test setting a "sizer" uom with a percentage', function(assert) {
+  assert.expect(1);
+  Ember.run(()=> {
+    var component = this.subject({
+      styleBindings: ['width', 'height'],
+      width: '100%'
+    });
+    this.render();
+    Ember.run.next(() => {
+      assert.equal(component.$()[0].style.width, '100%', 'width set to 100%');
+    });
+
+  });
+});
+
+test('test that default bindings work', function(assert) {
+  assert.expect(2);
+  Ember.run(()=> {
+    var component = this.subject({
+      width: '100%',
+      height: '4em'
+    });
+    this.render();
+    Ember.run.next(() => {
+      assert.equal(component.$()[0].style.width, '100%', 'width set');
+      assert.equal(component.$()[0].style.height, '4em', 'height set');
     });
 
   });

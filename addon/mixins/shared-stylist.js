@@ -6,11 +6,11 @@ const { computed, observer, $, run, on, typeOf, isPresent } = Ember;  // jshint 
 const { defineProperty, get, set, inject, isEmpty, merge } = Ember; // jshint ignore:line
 const a = Ember.A; // jshint ignore:line
 const defaultBindings = [
-  'minWidth','height','minHeight','maxHeight','fontSize',
+  'width','minWidth','height','minHeight','maxHeight','fontSize',
   'fontFamily','fontWeight','fontStyle','cursor','display'
 ];
 const sizer = size => {
-  return Number(size) === size ? size + 'px' : size;
+  return isNaN(Number(size)) ? size : size + 'px';
 };
 const dasherize = thingy => {
   return thingy ? Ember.String.dasherize(thingy) : thingy;
@@ -65,15 +65,9 @@ var SharedStylist = Ember.Mixin.create({
     switch(style) {
     case 'fontSize':
     case 'width':
+    case 'height':
     case 'minWidth':
     case 'maxWidth':
-      return sizer(value);
-    case 'height':
-      let width = this.get('width');
-      if(!width || String(width).substr(-2) !== 'px') {
-        return sizer(value);
-      }
-      width = width.substr(0,width.length - 2);
       return sizer(value);
     default:
       if(a(['undefined','null']).contains(typeOf(value))) {

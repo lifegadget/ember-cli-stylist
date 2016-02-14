@@ -13,17 +13,32 @@
 ## Usage ##
 This addon helps component developers to provide HTML style attributes dynamically and safely. To use this just install and then in your component, mixin the `shared-stylist` mixin like so:
 
-````javascript
+```javascript
 import SharedStylist from 'ember-cli-stylist/mixins/shared-stylist';
 export default Ember.Component.extend(SharedStylist,{
-  styleBindings: ['style'],
+  attributeBindings: ['stylist:style'],
   // your code here
 }
-````
+```
+
+or as it getting to be more common ...
+
+```javascript
+import SharedStylist from 'ember-cli-stylist/mixins/shared-stylist';
+export default Ember.Component.extend(SharedStylist,{
+  tagName: '',
+}
+```
+
+```handlebars
+<div style={{stylist}}>
+  Hello world
+</div>
+```
 
 You can optionally include a property in your component `styleBindings` which will specify which styles you want  proxied. If you don't specify then the default properties proxied are:
 
-> height width min-height max-height min-width max-width font-size font-family font-weight cursor display
+> height width minHeight maxHeight minWidth maxWidth fontSize fontFamily fontWeight cursor display
 
 With the Mixin added your component will now proxy style properties in a safe manner (aka, they will be escaped so XSS attacks are made much harder). For your component called `my-component` a container might use it like so:
 
@@ -31,7 +46,7 @@ With the Mixin added your component will now proxy style properties in a safe ma
 
 which would result in the style property being set to:
 
-    <div id="ember456" style="width: 50%; height: 100px; font-weight: 800">
+    <div id="ember456" style="width: 50%; height: 100px; font-weight: 800px">
 
 ## Dependencies
 

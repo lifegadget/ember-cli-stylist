@@ -10,8 +10,9 @@ const defaultBindings = [
   'fontFamily','fontWeight','fontStyle','cursor','display'
 ];
 const sizer = size => {
+  // scalar → rem value
   if(typeOf(size) === 'string' && size.match(/^(\d+)x$/)) {
-    size = size.replace(/^(\d+)x$/, '$1' + 'rem');   // scalar → rem value
+    size = size.replace(/^(\d+)x$/, '$1' + 'rem');
   }
   return isNaN(Number(size)) ? size : size + 'px';
 };
@@ -66,7 +67,6 @@ var SharedStylist = Ember.Mixin.create({
    * @return {string}       A mildly processed/improved variant on the input
    */
   _stylist(style, value) {
-    console.log(`Stylist for ${style} and value ${value}`);
     switch(style) {
     case 'font-size':
     case 'padding':

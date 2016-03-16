@@ -10,6 +10,9 @@ const defaultBindings = [
   'fontFamily','fontWeight','fontStyle','cursor','display'
 ];
 const sizer = size => {
+  if(typeOf(size) === 'string' && size.match(/^(\d+)x$/)) {
+    size = size.replace(/^(\d+)x$/, '$1' + 'rem');   // scalar → rem value
+  }
   return isNaN(Number(size)) ? size : size + 'px';
 };
 const dasherize = thingy => {
@@ -23,7 +26,8 @@ var SharedStylist = Ember.Mixin.create({
     let styleBindings = this.get('styleBindings');
     return typeOf(styleBindings) === 'string' ? styleBindings.split(',') : styleBindings;
   }),
-  _initialise: on('init', function() {
+  init () {
+    this._super(...arguments);
     let styleBindings = this.get('_styleBindings');
     const observerBindings = styleBindings || defaultBindings;
     observerBindings.map(item => {
@@ -32,7 +36,7 @@ var SharedStylist = Ember.Mixin.create({
     run.schedule('afterRender', () => {
       this._setStyle();
     });
-  }),
+  },
   // Because we created the observer dynamically we must take responsibility of
   // removing the observers on exit
   _willDestroyElement: on('willDestroyElement', function() {
@@ -62,12 +66,15 @@ var SharedStylist = Ember.Mixin.create({
    * @return {string}       A mildly processed/improved variant on the input
    */
   _stylist(style, value) {
+    console.log(`Stylist for ${style} and value ${value}`);
     switch(style) {
-    case 'fontSize':
+    case 'font-size':
+    case 'padding':
+    case 'margin':
     case 'width':
     case 'height':
-    case 'minWidth':
-    case 'maxWidth':
+    case 'min-width':
+    case 'max-width':
       return sizer(value);
     default:
       if(a(['undefined','null']).contains(typeOf(value))) {

@@ -48,3 +48,13 @@ test('setting backgound-color', function(assert) {
   assert.equal(this.$('.inner[style*="background-color"]').length, 1, 'inner class has background-color');
   assert.equal(this.$('.inner')[0].style['background-color'], 'red', 'inner class has correct value');
 });
+
+test('setting scalar value translated to rem value', function(assert) {
+  assert.expect(2);
+  this.render(hbs`
+    {{test-component fontSize='10x' styleBindings='fontSize'}}
+  `);
+
+  assert.equal(this.$('.ember-view[style*="font-size"]').length, 1, 'detected style binding');
+  assert.equal(this.$('.ember-view')[0].style['font-size'], '10rem', 'style is correctly set. ');
+});

@@ -27,17 +27,17 @@ var SharedStylist = Ember.Mixin.create({
     let styleBindings = this.get('styleBindings');
     return typeOf(styleBindings) === 'string' ? styleBindings.split(',') : styleBindings;
   }),
-  init () {
-    this._super(...arguments);
+  _init: on('init', function() {
     let styleBindings = this.get('_styleBindings');
     const observerBindings = styleBindings || defaultBindings;
     observerBindings.map(item => {
       this.addObserver(item, this._setStyle);
     });
+    console.log('testing');
     run.schedule('afterRender', () => {
       this._setStyle();
     });
-  },
+  }),
   // Because we created the observer dynamically we must take responsibility of
   // removing the observers on exit
   _willDestroyElement: on('willDestroyElement', function() {

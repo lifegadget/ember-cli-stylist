@@ -24,16 +24,22 @@ const htmlSafe = Ember.String.htmlSafe;
 
 var SharedStylist = Ember.Mixin.create({
   _styleBindings: computed('styleBindings', function() {
-    let styleBindings = this.get('styleBindings');
-    return typeOf(styleBindings) === 'string' ? styleBindings.split(',') : styleBindings;
+    let styleBindings = this.get('styleBindings') || defaultBindings;
+    styleBindings = typeOf(styleBindings) === 'string' ? styleBindings.split(',') : styleBindings;
+    return styleBindings.map(sb => {
+      if(sb.indexOf('::') !== -1) {
+        sb = { property: sb.split('::')[0], bindTo: sb.split('::')[1] };
+      } else {
+        sb = { property: sb, bindTo: sb };
+      }
+      return sb;
+    });
   }),
   _init: on('init', function() {
-    let styleBindings = this.get('_styleBindings');
-    const observerBindings = styleBindings || defaultBindings;
+    const observerBindings = this.get('_styleBindings');
     observerBindings.map(item => {
-      this.addObserver(item, this._setStyle);
+      this.addObserver(item.bindTo, this._setStyle);
     });
-    console.log('testing');
     run.schedule('afterRender', () => {
       this._setStyle();
     });
@@ -41,19 +47,17 @@ var SharedStylist = Ember.Mixin.create({
   // Because we created the observer dynamically we must take responsibility of
   // removing the observers on exit
   _willDestroyElement: on('willDestroyElement', function() {
-    const styleBindings = this.get('_styleBindings');
-    const observerBindings = styleBindings || defaultBindings;
-
+    const observerBindings = this.get('_styleBindings');
     observerBindings.map(item => {
-      this.removeObserver(item, this, '_setStyle');
+      this.removeObserver(item.bindTo, this, '_setStyle');
     });
   }),
   _setStyle() {
-    const styleBindings = this.get('_styleBindings') || defaultBindings;
+    const styleBindings = this.get('_styleBindings');
     let styles = [];
     styleBindings.map(style => {
-      const cssProp = dasherize(style);
-      const value = this._stylist(cssProp, this.get(style));
+      const cssProp = dasherize(style.property);
+      const value = this._stylist(cssProp, this.get(style.bindTo));
       if(value) {
         styles.push(`${cssProp}: ${value}`);
       }

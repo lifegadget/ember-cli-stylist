@@ -21,7 +21,7 @@ export default Ember.Component.extend(SharedStylist,{
 }
 ```
 
-or as it getting to be more common ...
+or if you're using tagless component ...
 
 ```javascript
 import SharedStylist from 'ember-cli-stylist/mixins/shared-stylist';
@@ -47,6 +47,23 @@ With the Mixin added your component will now proxy style properties in a safe ma
 which would result in the style property being set to:
 
     <div id="ember456" style="width: 50%; height: 100px; font-weight: 800px">
+
+### Property Aliasing
+
+In many cases you may find yourself with a component which you would like to represent/serve as a style but it's name is something other than the style property name. With "aliasing" you can address this problem. For example:
+
+```javascript
+styleBindings: [width::_width, height],
+```
+
+In this case we've stated our style should only listen for changes on *_width* and _height_ but the name "_width" is an alias for the style property name "width".
+
+## Template Helpers
+
+In addition to the core functionality for observing and projecting style properties to the DOM, this addon provides a few useful helper functions for working with **classes**.
+
+- `classy` - this allows your to list a set of properties which -- if there is a value adds the value with a space prepended.
+
 
 ## Dependencies
 

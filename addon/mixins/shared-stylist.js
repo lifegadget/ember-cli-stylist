@@ -54,7 +54,6 @@ var SharedStylist = Ember.Mixin.create({
   }),
   _setStyle() {
     const styleBindings = this.get('_styleBindings');
-    console.log('setting styles: ', styleBindings);
     let styles = [];
     styleBindings.map(style => {
       const cssProp = dasherize(style.property);

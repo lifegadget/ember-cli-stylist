@@ -51,7 +51,6 @@ test('with fontColor a styleBinding it is set', function(assert) {
     });
     this.render();
     Ember.run.next(() => {
-      console.log(component.$()[0].style);
       assert.notEqual(component.stylist.string.indexOf('background-color'), -1);
       assert.equal(component.$()[0].style.width, '500px', 'width set');
       assert.equal(component.$()[0].style.height, '350px', 'height set');

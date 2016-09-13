@@ -54,6 +54,7 @@ var SharedStylist = Ember.Mixin.create({
   }),
   _setStyle() {
     const styleBindings = this.get('_styleBindings');
+    console.log('setting styles: ', styleBindings);
     let styles = [];
     styleBindings.map(style => {
       const cssProp = dasherize(style.property);
@@ -81,7 +82,7 @@ var SharedStylist = Ember.Mixin.create({
     case 'max-width':
       return sizer(value);
     default:
-      if(a(['undefined','null']).contains(typeOf(value))) {
+      if(a(['undefined','null']).includes(typeOf(value))) {
         return null;
       }
       return value;

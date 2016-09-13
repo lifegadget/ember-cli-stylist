@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-stylist",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "Ember-cli addon to allow CSP-safe inline CSS styling",
   "directories": {
     "doc": "doc",
@@ -15,20 +15,20 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-    "files": [
-      "ember-cli-build.js",
-      "LICENSE.md",
-      "README.md",
-      "addon",
-      "app",
-      "bower.json",
-      "config",
-      "index.js",
-      "package.json",
-      "testem.json",
-      "vendor"
-    ],
-    "main": "index.js",
+  "files": [
+    "ember-cli-build.js",
+    "LICENSE.md",
+    "README.md",
+    "addon",
+    "app",
+    "bower.json",
+    "config",
+    "index.js",
+    "package.json",
+    "testem.json",
+    "vendor"
+  ],
+  "main": "index.js",
   "author": "Ken Snyder",
   "license": "MIT",
   "devDependencies": {
@@ -42,7 +42,7 @@
     "ember-cli-ic-ajax": "0.2.4",
     "ember-cli-inject-live-reload": "^1.4.0",
     "ember-cli-qunit": "^1.2.2",
-    "ember-cli-release": "0.2.8",
+    "ember-cli-release": "1.0.0-beta.2",
     "ember-cli-sri": "^1.2.1",
     "ember-cli-uglify": "^1.2.0",
     "ember-disable-proxy-controllers": "^1.0.0",

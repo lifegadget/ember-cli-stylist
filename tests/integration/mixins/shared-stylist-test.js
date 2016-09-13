@@ -56,5 +56,19 @@ test('setting scalar value translated to rem value', function(assert) {
   `);
 
   assert.equal(this.$('.ember-view[style*="font-size"]').length, 1, 'detected style binding');
-  assert.equal(this.$('.ember-view')[0].style['font-size'], '10rem', 'style is correctly set. ');
+  assert.equal(this.$('.ember-view')[0].style['font-size'], '10rem', 'style is correctly set ');
+});
+
+test('aliased style works', function(assert) {
+  assert.expect(3);
+  this.set('family', null);
+  this.render(hbs`
+    {{test-component fontFamily=family styleBindings='fontFamily::_fontFamily'}}
+  `);
+
+  assert.equal(this.$('.ember-view[style*="font-family"]').length, 1, 'detected style binding');
+  assert.equal(this.$('.ember-view')[0].style['font-family'], 'monospace', 'style is correctly set on initialisation.');
+
+  this.set('family', 'serif');
+  assert.equal(this.$('.ember-view')[0].style['font-family'], 'serif', 'aliased style -- a CP -- has detected underlying change and changed value.');
 });

@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-stylist",
-  "version": "0.4.9",
+  "version": "0.4.10",
   "description": "Ember-cli addon to allow CSP-safe inline CSS styling",
   "directories": {
     "doc": "doc",

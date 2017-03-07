@@ -1,10 +1,7 @@
 import Ember from 'ember';
-const { keys, create } = Object; // jshint ignore:line
-const { RSVP: {Promise, all, race, resolve, defer} } = Ember; // jshint ignore:line
-const { inject: {service} } = Ember; // jshint ignore:line
-const { computed, observer, $, run, on, typeOf, isPresent } = Ember;  // jshint ignore:line
-const { defineProperty, get, set, inject, isEmpty, merge } = Ember; // jshint ignore:line
-const a = Ember.A; // jshint ignore:line
+const { computed, on, typeOf } = Ember; 
+const a = Ember.A;
+
 const defaultBindings = [
   'width','minWidth','height','minHeight','maxHeight','fontSize',
   'fontFamily','fontWeight','fontStyle','cursor','display'
@@ -35,23 +32,26 @@ var SharedStylist = Ember.Mixin.create({
       return sb;
     });
   }),
-  _init: on('init', function() {
+  init() {
+    this._super(...arguments);
     const observerBindings = this.get('_styleBindings');
     observerBindings.map(item => {
       this.addObserver(item.bindTo, this._setStyle);
     });
-    run.schedule('afterRender', () => {
-      this._setStyle();
-    });
-  }),
+  },
+  didInsertElement() {
+    this._super(...arguments);
+    this._setStyle();
+  },
   // Because we created the observer dynamically we must take responsibility of
   // removing the observers on exit
-  _willDestroyElement: on('willDestroyElement', function() {
+  willDestroyElement() {
+    this._super(...arguments);
     const observerBindings = this.get('_styleBindings');
     observerBindings.map(item => {
       this.removeObserver(item.bindTo, this, '_setStyle');
     });
-  }),
+  },
   _setStyle() {
     const styleBindings = this.get('_styleBindings');
     let styles = [];
